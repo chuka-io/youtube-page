@@ -1,0 +1,127 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1199px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .video-grid {
+    margin-left: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .video-grid {
+    margin-left: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  vertical-align: top;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 90, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.profile-tooltip {
+  width: 200px;
+  height: 64px;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.channel-picture:hover .profile-tooltip {
+  opacity: 1;
+}
+
+.channel-picture {
+  height: 40px;
+  position: relative;
+}
+
+.profile-picture-tooltip {
+  width: 46px;
+  border-radius: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.video-author-tooltip {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subscriber-count-tooltip {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  color: rgb(82, 82, 82);
+}
